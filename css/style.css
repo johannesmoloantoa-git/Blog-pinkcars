@@ -42,7 +42,7 @@ a{
 
 .btn-big{
     padding: .7rem 1.3rem;
-    line-height: 1.3rem;
+    line-height: 1rem;
 }
 
 .btn:hover{
@@ -361,7 +361,7 @@ header .menu-toggle{
 }
 
 .auth-content form p{
-    text-align: center;
+    text-align: center !important;
 }
 
 .auth-content form p a{
@@ -465,6 +465,36 @@ header .menu-toggle{
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width:500px){
+    .content{
+        width: 100%;
+    }
+    .content .main-content{
+        width: 100%;
+    }
+    .content .sidebar{
+        width: 100%;
+        padding: 10px;
+    }
+    .content .sidebar .section.search{
+        margin-top: 30px;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer .footer-content{
+        height: auto;
+        flex-direction: column;
+    }
+    .footer .footer-content .contact-form{
+        padding-bottom: 90px;
+    }
+    .footer .footer-content .contact-form .contact-btn{
+        width: 100%;
+    }
+}
+
+
 @media only screen and (max-width: 750px){
     header {
         position: relative;
@@ -517,12 +547,30 @@ header .menu-toggle{
     }
     header .logo{        
         margin-left: .5em;
-    }
-    
-    
-    
+    }    
 
 }
+
+@media only screen and (max-width:365px){
+    .content .main-content .post {
+       height: auto;       
+    }
+
+    .content .main-content .post-image{
+        width: 100%;
+    }
+    
+    .content .main-content .post .post-preview{
+        width: 100%;
+    }
+    .content .main-content .post .read-more{
+        position: static;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 /*..............End header and screan adjustable in header.............*/
 
